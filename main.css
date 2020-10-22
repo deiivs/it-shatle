@@ -1,68 +1,70 @@
 html,
 body {
-  margin: 0px;
-  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 500;
 }
 .hero {
   height: 100vh;
   background: #eeeff1;
 }
-.conteiner {
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 55px;
+  height: 115px;
+}
+.container {
   width: 1200px;
   padding-left: 40px;
   padding-right: 40px;
   margin: 0 auto;
 }
-.logo_conteiner {
-  width: 96px;
+.logo-container {
   height: 60px;
+  width: 96px;
+
   float: left;
 }
-.logo_conteiner img {
-  width: 100%;
+.logo-container img {
   height: 100%;
+  width: 100%;
   object-fit: contain;
 }
-header {
-  padding-top: 55px;
-  height: 60px;
-}
-header nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.menu {
   float: right;
 }
-
 header nav li {
   display: inline-block;
   margin-right: 22px;
 }
-
-header nav li:last-child {
-  margin-right: 0;
-}
-
-header.hero_header {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
 header nav li a {
   text-decoration: none;
   line-height: 60px;
-  color: #000;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  padding: 0 10px;
 }
 
+header nav li a:hover {
+  opacity: 0.6;
+  color: #34547a;
+}
+.menu li:last-child {
+  margin-right: 0;
+}
 .hero {
   padding-top: 115px;
 }
-
-.hero > .conteiner {
+.hero .container {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
