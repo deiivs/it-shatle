@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+.hero {
+  height: 100vh;
+  background: #eeeff1;
+}
+.conteiner {
+  width: 1200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 0 auto;
+}
+.logo_conteiner {
+  width: 96px;
+  height: 60px;
+  float: left;
+}
+.logo_conteiner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header {
+  padding-top: 55px;
+  height: 60px;
+}
+header nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 22px;
+}
+
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header.hero_header {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+header nav li a {
+  text-decoration: none;
+  line-height: 60px;
+  color: #000;
+}
+
+.hero {
+  padding-top: 115px;
+}
+
+.hero > .conteiner {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
